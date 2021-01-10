@@ -1,0 +1,35 @@
+<p>blog-detail works!</p>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-8">
+  <div class="post-form">
+  <div *ngFor="let com of lstcomments" class="posts">
+  <img src="{{com.imgUrl}}" style="height:80px; width:80px">
+  <h3>Title : {{com.title}}</h3>
+  <h6>Id : {{com.id}}</h6>
+  <div class="post-date">
+    <span> Author : {{com.author}}</span><br/>
+    created on : {{com.created_at| date:'medium'}}<br/>
+    posted on : {{com.posted_at | date:'medium'}}
+  </div>
+  <div class="post-desc"> Content : {{com.adv_description}}</div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-4">
+  <div class="post-form">
+  <div *ngFor="let com of lstcomments" class="posts">
+  <img [src]="imageUrl"{{com.imageUrl}}>
+  <h3>Adv_Title : {{com.adv_title}}</h3>
+ <div class="post-desc">Adv_description : {{com.adv_description}}</div>
+ <p>adv_butttonlink : {{adv_butttonlink}}</p>
+ <p>Adv_butttonname : {{adv_butttonname}}</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+

@@ -1,0 +1,38 @@
+<p>detailpage works!</p>
+
+  
+<div class="container">
+  <div class="row">
+  <div class="col-md-8">
+    <div class="post-form">
+  <div *ngFor="let com of lstcomments" class="posts">
+    <a href="#" routerLink="/detailblog"><img src="{{com.imgUrl}}" style= "height:80px ; width:80px"></a>
+   <a href="#" routerLink="/detailblog"> <h3> Title : {{com.title}}</h3></a>
+   <a href="#" routerLink="/detailblog"> <p>Id : {{com.id}}</p></a>
+   <div class="post-date">
+      <span> Author : {{com.author}}</span><br/>
+      posted on : {{com.created_at| date:'medium'}}
+    </div>
+    <div class="post-desc"> Description : {{com.adv_description}}</div>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-md-4">
+    <h3>Recent post</h3>
+    <div class="post-form second">
+  <div *ngFor="let com of lstcomments" class="postss">
+    <a href="#" routerLink="/detailblog"><img src="{{com.imgUrl}}" style= "height:50px ; width:50px"></a>
+   <a href="#" routerLink="/detailblog"> <h5> Title : {{com.title}}</h5></a>
+   <a href="#" routerLink="/detailblog"> <p>Id : {{com.id}}</p></a>
+   <div class="post-date">
+      <span> Author : {{com.author}}</span><br/>
+      posted on : {{com.created_at| date:'medium'}}
+    </div>
+    <div class="post-desc"> Description : {{com.adv_description}}</div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+</div>
