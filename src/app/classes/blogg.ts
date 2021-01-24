@@ -10,7 +10,6 @@ export class Blogg{
     time_toread:string;
     blog_url:string;
     
-    
     image:string;
 
     adv_title:string;

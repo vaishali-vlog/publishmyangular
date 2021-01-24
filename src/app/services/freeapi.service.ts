@@ -5,6 +5,7 @@ import{ Comments} from '../classes/Comments';
 
  
 @Injectable({
+  
   providedIn: 'root'
 })
 export class FreeApiService {
