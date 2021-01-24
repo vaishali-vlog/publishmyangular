@@ -9,7 +9,7 @@ export class Blogg{
     meta_keyword:string;
     time_toread:string;
     blog_url:string;
-    imgUrl:string;
+    
     
     image:string;
 
